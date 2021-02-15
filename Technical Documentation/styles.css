@@ -1,0 +1,17 @@
+@media(max-width:500px) {
+    p {
+        font-size: 18px;
+    }
+}
+
+#main-header {
+    text-align: center;
+}
+#navbar {
+    position: absolute;
+}
+
+#main-doc {
+    margin-left: 8rem;
+    margin-top: 5rem;
+}

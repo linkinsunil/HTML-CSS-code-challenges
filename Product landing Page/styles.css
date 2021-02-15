@@ -1,0 +1,50 @@
+/* User Story #13: The navbar should always be at the top of the viewport.
+
+User Story #14: My product landing page should have at least one media query.
+
+User Story #15: My product landing page should utilize CSS flexbox at least once.
+
+You can build your project by forking this CodePen pen. Or you can use this CDN link to run the tests in any environment you like: https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js  */
+:root{
+    background: linear-gradient(90deg,cyan, magenta);
+}
+#main{
+    text-align:center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+#header {
+    display: flex;
+    justify-content: space-between;
+}
+iframe {
+    border: 10px solid white;  
+    border-radius: 1rem;  
+}
+#header-img {
+    justify-self: flex-start;
+    height: 50px;
+    width: 50px;  
+    margin-left: 20px;  
+    margin-top: 10px;
+}
+
+#nav-bar {
+    margin-top: 30px;
+} 
+@media (max-width: 700px) {
+    #header {
+        background-color: bisque;
+    }
+}
+
+.nav-link {
+    background-color: blueviolet;
+    color: white;
+    text-decoration: none;
+    padding: .5rem;
+    border-radius: 30px;
+}

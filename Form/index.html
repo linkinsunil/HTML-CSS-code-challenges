@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey From</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <header><h1 id=title>Survey Form</h1></header>
+        <p id="description">Read the questions carefully and select the appropriate option before submitting</p>
+        <form id="survey-form" action="">
+            <label id="name-label" for="name">Name:</label>
+            <input type="text" id="name" type="text" placeholder="Enter your name" required>
+            <br><br>
+            <label id="email-label" for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email id" required>
+            <br><br>
+            <label id="number-label" for="number">Contact No.:</label>
+            <input type="number" id="number" min="5999999999" max="9999999999" placeholder="Enter your contact number" required>
+            <br><br>
+            <label id="dropdown-education" for="dropdown">Select Education:</label>
+            <select id="dropdown">
+                <option value="post graduation">Post graduation</option>
+                <option value="graduation" selected>Graduation</option>
+                <option value="senior secondary">Senior Secondary</option>
+                <option value="higher secondary">Higher Secondary</option>
+            </select>
+            <br><br>
+            
+            <fieldset>
+                <legend>Select Profession:</legend>
+                <label id="label-employed" for="employed">Employed</label>
+                <input type="radio" id="employed" name="profession" value="employed" >
+                <br>
+                <label id="label-business" for="business">Business</label>
+                <input type="radio" id="business" name="profession" value="business">
+                <br>
+                <label id="label-student" for="student">Student</label>
+                <input type="radio" id="student" name="profession" value="student">
+                <br>
+                <label id="label-unemployed" for="unemployed">Unemployed</label>
+                <input id="unemployed" type="radio" name="profession" value="unemployed">
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Skill set</legend>
+                <small>Select those applies</small>
+                <br><br>            
+                <label for="front-end" id="label-front-end">Front End</label>
+                <input type="checkbox" id="front-end" name="skill-set" value="front-end">
+                <br>
+                <label for="back-end" id="label-back-end">Back End</label>
+                <input type="checkbox" id="back-end" name="skill-set" value="back-end">
+                <br>
+                <label for="database" id="label-database">Database</label>
+                <input type="checkbox" id="database" name="skill-set" value="database">
+            </fieldset>
+            <br>
+
+            <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+            <br><br>
+            <button type="submit" id="submit"> Submit</button>
+        </form>
+
+    </main>
+    <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>    
+</body>
+</html>

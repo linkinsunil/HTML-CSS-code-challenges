@@ -1,0 +1,19 @@
+#main {
+    text-align: center;
+}
+#title {
+    text-align: center;
+}
+#img-div {
+    display: grid;
+    justify-items: center;
+    margin:auto;
+}
+#image {
+    max-width: 100%;
+    height: auto;
+}
+#tribute-info {
+    display: grid;
+    justify-items: center;
+}
